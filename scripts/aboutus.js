@@ -1,5 +1,5 @@
 document.getElementById("nav_home").addEventListener("click", function() {
-    window.location.href = "../sites/home.html";
+    window.location.href = "../sites/index.html";
 });
 document.getElementById("nav_products").addEventListener("click", function() {
     window.location.href = "../sites/products.html";
