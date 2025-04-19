@@ -144,7 +144,6 @@ document.getElementById('theform').addEventListener('submit', function(e) {
     }
   
     const prob = document.getElementById('prob').value;
-    const agreement = document.getElementById('agreement').checked;
   
     console.log('First Name:', firstname);
     console.log('Last Name:', lastname);
@@ -152,7 +151,6 @@ document.getElementById('theform').addEventListener('submit', function(e) {
     console.log('Email:', email);
     console.log('Gender:', selectedGender);
     console.log('Problem Description:', prob);
-    console.log('Agreed to Terms:', agreement);
   });
   
   
