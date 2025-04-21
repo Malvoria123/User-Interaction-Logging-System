@@ -46,19 +46,30 @@ function collect_data() {
     let selectedGender = '';
     for (const input of genderInputs) {
       if (input.checked) {
-        selectedGender = input.value;
+        selectedGender = input.id;
         break;
       }
     }
   
     const prob = document.getElementById('prob').value;
-  
-    console.log('First Name:', firstname);
-    console.log('Last Name:', lastname);
-    console.log('Phone:', phone);
-    console.log('Email:', email);
-    console.log('Gender:', selectedGender);
-    console.log('Problem Description:', prob);
+    
+    // Create an object to store the data
+    const logdata_contactus = {
+        timestamp: new Date().toLocaleString(),
+        page: window.location.href,
+        userAgent: navigator.userAgent,
+        screenWidth: screen.width,
+        screenHeight: screen.height,
+        firstname: firstname,
+        lastname: lastname,
+        phone: phone,
+        email: email,
+        gender: selectedGender,
+        problemDescription: prob
+    };
+
+    // Optionally, log the entire object for completeness
+    console.log(logdata_contactus);
 }
 
 function validateData(event) {
@@ -147,7 +158,6 @@ function validateData(event) {
     }
 
     if (!temp) {
-        alert("Thank you! Our team will help you as soon as possible!");
         event.preventDefault();
         collect_data()
         return true
