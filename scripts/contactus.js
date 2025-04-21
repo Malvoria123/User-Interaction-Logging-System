@@ -148,6 +148,7 @@ function validateData(event) {
 
     if (!temp) {
         alert("Thank you! Our team will help you as soon as possible!");
+        event.preventDefault();
         collect_data()
         return true
     } else {
