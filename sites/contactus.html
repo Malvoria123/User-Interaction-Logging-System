@@ -19,7 +19,7 @@
     </nav>
     <div class="title">Need help? We can help.</div>
     <div class="form_con">
-        <form method="POST" id="theform">
+        <form method="POST" id="theform" onsubmit="return validateData(event)" action="/submit">
             <div class="big_con">
                 <div class="left_con"><label for="firstname" class="left_label">First Name:</label></div>
                 <div class="right_con"><input type="text" name="firstname" id="firstname"></div>

@@ -36,7 +36,32 @@ function containsSpecialCharacters(input) {
     return false;
 }
 
-function validateData() {
+function collect_data() {
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+  
+    const genderInputs = document.getElementsByName('gender');
+    let selectedGender = '';
+    for (const input of genderInputs) {
+      if (input.checked) {
+        selectedGender = input.value;
+        break;
+      }
+    }
+  
+    const prob = document.getElementById('prob').value;
+  
+    console.log('First Name:', firstname);
+    console.log('Last Name:', lastname);
+    console.log('Phone:', phone);
+    console.log('Email:', email);
+    console.log('Gender:', selectedGender);
+    console.log('Problem Description:', prob);
+}
+
+function validateData(event) {
     var firstname = document.getElementById("firstname");
     var lastname = document.getElementById("lastname");
     var phone = document.getElementById("phone");
@@ -123,34 +148,39 @@ function validateData() {
 
     if (!temp) {
         alert("Thank you! Our team will help you as soon as possible!");
+        collect_data()
+        return true
+    } else {
+        event.preventDefault();
+        return false
     }
 }
 
-document.getElementById('theform').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent actual form submission
+// document.getElementById('theform').addEventListener('submit', function(e) {
+//     e.preventDefault(); // Prevent actual form submission
   
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
+//     const firstname = document.getElementById('firstname').value;
+//     const lastname = document.getElementById('lastname').value;
+//     const phone = document.getElementById('phone').value;
+//     const email = document.getElementById('email').value;
   
-    const genderInputs = document.getElementsByName('gender');
-    let selectedGender = '';
-    for (const input of genderInputs) {
-      if (input.checked) {
-        selectedGender = input.value;
-        break;
-      }
-    }
+//     const genderInputs = document.getElementsByName('gender');
+//     let selectedGender = '';
+//     for (const input of genderInputs) {
+//       if (input.checked) {
+//         selectedGender = input.value;
+//         break;
+//       }
+//     }
   
-    const prob = document.getElementById('prob').value;
+//     const prob = document.getElementById('prob').value;
   
-    console.log('First Name:', firstname);
-    console.log('Last Name:', lastname);
-    console.log('Phone:', phone);
-    console.log('Email:', email);
-    console.log('Gender:', selectedGender);
-    console.log('Problem Description:', prob);
-  });
+//     console.log('First Name:', firstname);
+//     console.log('Last Name:', lastname);
+//     console.log('Phone:', phone);
+//     console.log('Email:', email);
+//     console.log('Gender:', selectedGender);
+//     console.log('Problem Description:', prob);
+//   });
   
   
