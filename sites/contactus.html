@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contactus.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../assets/others/Kellogg-Logo.png" alt="" class="header_img">
+    </div>
+    <nav class="nav">
+        <div class="nav_item" id="nav_home">Home</div>
+        <div class="nav_item" id="nav_products">Products</div>
+        <div class="nav_item" id="nav_recipes">Recipes</div>
+        <div class="nav_item" id="nav_aboutus">About Us</div>
+        <div class="nav_item" id="nav_contactus">Contact Us</div>
+    </nav>
+    <div class="title">Need help? We can help.</div>
+    <div class="form_con">
+        <form method="POST" id="theform" onsubmit="return validateData(event)" action="/submit">
+            <div class="big_con">
+                <div class="left_con"><label for="firstname" class="left_label">First Name:</label></div>
+                <div class="right_con"><input type="text" name="firstname" id="firstname"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="lastname" class="left_label">Last Name:</label></div>
+                <div class="right_con"><input type="text" name="lastname" id="lastname"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="phone" class="left_label">Phone Number:</label></div>
+                <div class="right_con"><input type="text" name="phone" id="phone"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="email" class="left_label">Email:</label></div>
+                <div class="right_con"><input type="text" name="email" id="email"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="password" class="left_label">Password:</label></div>
+                <div class="right_con"><input type="password" name="password" id="password"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="cpassword" class="left_label">Confirm Password:</label></div>
+                <div class="right_con"><input type="password" name="cpassword" id="cpassword"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="gender" class="left_label">Gender:</label></div>
+                <div class="right_con">
+                    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </div>
+            </div>
+            <div class="big_con">
+                <div class="left_con"><label for="prob" class="left_label">Your Issue:</label></div>
+                <div class="right_con"><input type="text" name="prob" id="prob"></div>
+            </div>
+            <div class="big_con">
+                <div class="left_con_v2"><input type="checkbox" name="agreement" id="agreement"></div>
+                <div class="right_con_v2"><label for="agreement">I agree with the terms and conditions.</label></div>
+            </div>
+            
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="validation" id="valfirstname1">First name cannot be empty!</div>
+        <div class="validation" id="valphone1">Phone number cannot be empty!</div>
+        <div class="validation" id="valphone2">Phone number can only contain numbers!</div>
+        <div class="validation" id="valemail1">Email cannot be empty!</div>
+        <div class="validation" id="valemail2">Email has to end with "@email.com"!</div>
+        <div class="validation" id="valpassword1">Password cannot be empty!</div>
+        <div class="validation" id="valpassword2">Password has to contain at least one special character!</div>
+        <div class="validation" id="valcpassword1">Confirm password has to be the same with password!</div>
+        <div class="validation" id="valgender1">You have to choose a gender!</div>
+        <div class="validation" id="valprob1">You have to fill the issue!</div>
+        <div class="validation" id="valagreement1">You have to agree with the terms and conditions!</div>
+    </div>
+    <br><br><br>
+    <div class="footer">
+        <div class="footer_item">©️ VKellogg's</div>
+    </div>
+</body>
+<script src="../scripts/contactus.js"></script>
+</html>

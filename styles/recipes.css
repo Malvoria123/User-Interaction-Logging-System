@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: red;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+    background-color: yellow;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header_img {
+    height: 100%;
+}
+
+.header_img:hover {
+    cursor: pointer;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    height: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav_item {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.nav_item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.title {
+    box-sizing: border-box;
+    padding: 10px 0 0 10px;
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    /* background-color: blue; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.subtitle {
+    box-sizing: border-box;
+    padding: 10px 0 0 10px;
+    display: inline-block;
+    color: white;
+    font-size: 35px; /*3vw*/
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    /* background-color: blue; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.imgcon {
+    padding: 10px 0 0 10px;
+    width: 400px;
+    /* background-color: blue; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.exp {
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    color: black;
+    font-size: 20px; /*1.4vw*/
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    background-color: #f7ceab;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border-radius: 20px;
+}
+
+
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.footer_item {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        height: auto;
+        flex-direction: column;
+        position: static;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .imgcon {
+        width: 200px;
+        height: 200px;
+    }
+
+    .exp {
+        font-size: 10px;
+    }
+}
