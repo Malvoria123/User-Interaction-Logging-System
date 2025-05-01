@@ -22,7 +22,7 @@ clickableElements.forEach(element => {
     element.addEventListener('click', function() {
         const divs = this.querySelectorAll('div');
         
-        const log = {
+        const logData = {
             eventType: "click",
             text: divs.length > 0 ? divs[divs.length - 1].textContent : 'No div Found',
             timestamp: new Date().toLocaleString(),
@@ -31,6 +31,21 @@ clickableElements.forEach(element => {
             screenWidth: screen.width,
             screenHeight: screen.height
         };
+        logInteraction("element_click", logData)
         console.log(log);
     });
 });
+
+// Function to send interaction data to the server
+async function logInteraction(type, data) {
+    try {
+      await fetch("/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type, data }),
+      });
+      console.log("Interaction logged successfully!");
+    } catch (error) {
+      console.error("Error logging interaction:", error);
+    }
+  }

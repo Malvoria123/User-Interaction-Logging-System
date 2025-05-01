@@ -54,7 +54,7 @@ function collect_data() {
     const prob = document.getElementById('prob').value;
     
     // Create an object to store the data
-    const logdata_contactus = {
+    const logData = {
         timestamp: new Date().toLocaleString(),
         page: window.location.href,
         userAgent: navigator.userAgent,
@@ -68,9 +68,23 @@ function collect_data() {
         problemDescription: prob
     };
 
-    // Optionally, log the entire object for completeness
-    console.log(logdata_contactus);
+    logInteraction("contact_form_data", logData);
+    console.log(logData);
 }
+
+// Function to send interaction data to the server
+async function logInteraction(type, data) {
+    try {
+      await fetch("/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type, data }),
+      });
+      console.log("Interaction logged successfully!");
+    } catch (error) {
+      console.error("Error logging interaction:", error);
+    }
+  }
 
 function validateData(event) {
     var firstname = document.getElementById("firstname");
@@ -157,12 +171,11 @@ function validateData(event) {
         temp++;
     }
 
+    event.preventDefault();
     if (!temp) {
-        event.preventDefault();
         collect_data()
         return true
     } else {
-        event.preventDefault();
         return false
     }
 }
