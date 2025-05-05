@@ -75,16 +75,16 @@ function collect_data() {
 // Function to send interaction data to the server
 async function logInteraction(type, data) {
     try {
-      await fetch("/log", {
+        await fetch("/log", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type, data }),
-      });
-      console.log("Interaction logged successfully!");
+        });
+        console.log("Interaction logged successfully!");
     } catch (error) {
-      console.error("Error logging interaction:", error);
+        console.error("Error logging interaction:", error);
     }
-  }
+}
 
 function validateData(event) {
     var firstname = document.getElementById("firstname");
