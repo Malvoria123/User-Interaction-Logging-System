@@ -79,7 +79,7 @@ async function logInteraction(type, data) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "x-api-key": "your_super_secret_key"  // match the one in your .env
+                "x-api-key": "a8UvF23Mv1PA900Hf"
             },
             body: JSON.stringify({ type, data }),
         });
