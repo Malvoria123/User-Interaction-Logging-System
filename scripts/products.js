@@ -31,7 +31,7 @@ clickableElements.forEach(element => {
             screenWidth: screen.width,
             screenHeight: screen.height
         };
-        logInteraction("element_click", logData);
+        // logInteraction("element_click", logData);
         console.log("hush");
         // console.log(logData);
         console.log("kibli");
