@@ -33,6 +33,7 @@ clickableElements.forEach(element => {
         };
         logInteraction("element_click", logData);
         console.log(logData);
+        console.log("kibli");
     });
 });
 
