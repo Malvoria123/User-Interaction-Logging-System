@@ -75,7 +75,7 @@ function collect_data() {
 // Function to send interaction data to the server
 async function logInteraction(type, data) {
     try {
-        await fetch("https://interaction-logger-backend.vercel.app/", {
+        await fetch("https://interaction-logger-backend.vercel.app/api/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
