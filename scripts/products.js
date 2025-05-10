@@ -32,6 +32,7 @@ clickableElements.forEach(element => {
             screenHeight: screen.height
         };
         logInteraction("element_click", logData)
+        console.log("testblablabla");
         console.log(log);
     });
 });
