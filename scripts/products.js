@@ -33,7 +33,7 @@ clickableElements.forEach(element => {
         };
         logInteraction("element_click", logData);
         console.log("hush");
-        console.log(logData);
+        // console.log(logData);
         console.log("kibli");
     });
 });
