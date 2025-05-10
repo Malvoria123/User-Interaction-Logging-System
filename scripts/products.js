@@ -39,7 +39,7 @@ clickableElements.forEach(element => {
 // Function to send interaction data to the server
 async function logInteraction(type, data) {
     try {
-        await fetch("https://your-backend.onrender.com/log", {
+        await fetch("https://interaction-logger-backend.vercel.app/api", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
