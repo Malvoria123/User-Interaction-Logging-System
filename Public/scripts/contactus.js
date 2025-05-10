@@ -75,10 +75,13 @@ function collect_data() {
 // Function to send interaction data to the server
 async function logInteraction(type, data) {
     try {
-        await fetch("/log", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type, data }),
+        await fetch("https://your-backend.onrender.com/log", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "x-api-key": "your_super_secret_key"  // match the one in your .env
+            },
+            body: JSON.stringify({ type, data }),
         });
         console.log("Interaction logged successfully!");
     } catch (error) {
