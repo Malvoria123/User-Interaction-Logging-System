@@ -31,18 +31,14 @@ clickableElements.forEach(element => {
             screenWidth: screen.width,
             screenHeight: screen.height
         };
-        // logInteraction("element_click", logData);
-        console.log("hush");
-        // console.log(logData);
-        console.log("kibli");
+        logInteraction("element_click", logData);
+        console.log(logData);
     });
 });
 
 // Function to send interaction data to the server
 async function logInteraction(type, data) {
-    console.log("ahihu");
     try {
-        console.log("ahiho");
         await fetch("https://interaction-logger-backend.vercel.app/", {
             method: "POST",
             headers: {
@@ -54,8 +50,6 @@ async function logInteraction(type, data) {
 
         console.log("Interaction logged successfully!");
     } catch (error) {
-        console.log("ahihujj");
         console.error("Error logging interaction:", error);
     }
-    console.log("ohihu");
 }
