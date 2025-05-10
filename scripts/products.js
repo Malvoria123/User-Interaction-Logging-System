@@ -31,9 +31,8 @@ clickableElements.forEach(element => {
             screenWidth: screen.width,
             screenHeight: screen.height
         };
-        logInteraction("element_click", logData)
-        console.log("testblablabla");
-        console.log(log);
+        logInteraction("element_click", logData);
+        console.log(logData);
     });
 });
 
