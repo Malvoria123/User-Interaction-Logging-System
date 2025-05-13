@@ -56,7 +56,6 @@ function collect_data() {
     // Create an object to store the data
     const logData = {
         timestamp: new Date().toLocaleString(),
-        page: window.location.href,
         userAgent: navigator.userAgent,
         screenWidth: screen.width,
         screenHeight: screen.height,

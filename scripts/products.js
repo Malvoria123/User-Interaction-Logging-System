@@ -26,7 +26,6 @@ clickableElements.forEach(element => {
             eventType: "click",
             text: divs.length > 0 ? divs[divs.length - 1].textContent : 'No div Found',
             timestamp: new Date().toLocaleString(),
-            page: window.location.href,
             userAgent: navigator.userAgent,
             screenWidth: screen.width,
             screenHeight: screen.height
