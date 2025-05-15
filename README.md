@@ -36,12 +36,12 @@ This user interaction tracking is valuable for:
 🧰 Tech Stack Used
 | Part | Tools | Why I chose it |
 | --- | --- | --- |
-| Frontend  | HTML, CSS, JavaScript, GitHub Pages | Simple, Industry-Standard, and Free |
-| Backend | Express.js (Node.js), Vercel | Lightweight, powerful, and Easy to Deploy |
-| Database | Firebase Firestore | Scalable, No Setup, Real-Time, Free Tier |
-| Versioning | Git & GitHub | Open Source Hosting |
-| Editor | Visual Studio Code (VSCode) | Feature-rich and Widely Used by Developers |
-| AI Assistant | ChatGPT, Qwen, Deepseek, etc. (AI) | To Help with Faster Writing, Coding, Debugging, and Fixes |
+| **Frontend**  | HTML, CSS, JavaScript, GitHub Pages | Simple, Industry-Standard, and Free |
+| **Backend** | Express.js (Node.js), Vercel | Lightweight, powerful, and Easy to Deploy |
+| **Database** | Firebase Firestore | Scalable, No Setup, Real-Time, Free Tier |
+| **Versioning** | Git & GitHub | Open Source Hosting |
+| **Editor** | Visual Studio Code (VSCode) | Feature-rich and Widely Used by Developers |
+| **AI Assistant** | ChatGPT, Qwen, Deepseek, etc. (AI) | To Help with Faster Writing, Coding, Debugging, and Fixes |
 
 🚀 Why These Tools?\
 **Express.js**: It’s a minimal, fast Node.js framework — perfect for building lightweight APIs.
