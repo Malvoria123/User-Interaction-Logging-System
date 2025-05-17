@@ -181,32 +181,3 @@ function validateData(event) {
         return false
     }
 }
-
-// document.getElementById('theform').addEventListener('submit', function(e) {
-//     e.preventDefault(); // Prevent actual form submission
-  
-//     const firstname = document.getElementById('firstname').value;
-//     const lastname = document.getElementById('lastname').value;
-//     const phone = document.getElementById('phone').value;
-//     const email = document.getElementById('email').value;
-  
-//     const genderInputs = document.getElementsByName('gender');
-//     let selectedGender = '';
-//     for (const input of genderInputs) {
-//       if (input.checked) {
-//         selectedGender = input.value;
-//         break;
-//       }
-//     }
-  
-//     const prob = document.getElementById('prob').value;
-  
-//     console.log('First Name:', firstname);
-//     console.log('Last Name:', lastname);
-//     console.log('Phone:', phone);
-//     console.log('Email:', email);
-//     console.log('Gender:', selectedGender);
-//     console.log('Problem Description:', prob);
-//   });
-  
-  

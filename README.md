@@ -1,14 +1,20 @@
 # User Interaction Logging System
 🚀 This is a personal project I built by myself. This is a user interaction logging system designed to track and store user activities, such as clicks and form submissions that **works on a real website**. The main goal is to show how we can collect useful behavioral data using modern web technologies — in a safe and developer friendly way.
 
-💻 The website used as the frontend in this project was built by me during my college.
+💻 The website used as the frontend in this project was built 100% by myself during my college.
 
 🌐 Live Demo\
+Frontend Repo (hosted on GitHub):\
+https://github.com/Malvoria123/User-Interaction-Logging-System.git
+
 Frontend (hosted on GitHub Pages):\
 https://malvoria123.github.io/User-Interaction-Logging-System/sites/index.html
 
-Backend API (deployed on Vercel):\
-https://interaction-logger-backend.vercel.app/api
+Backend Repo (hosted on GitHub):\
+https://github.com/Malvoria123/Interaction-Logger-Backend.git
+
+Backend API (deployed on Railway):\
+https://interaction-logger-backend-production.up.railway.app/api
 
 🧠 What This Project Does\
 This system logs user interactions (clicks and form submissions) on a website and stores them in a secure cloud database. For clicks, it collects:
@@ -37,16 +43,16 @@ This user interaction tracking is valuable for:
 | Part | Tools | Why I chose it |
 | --- | --- | --- |
 | **Frontend**  | HTML, CSS, JavaScript, GitHub Pages | Simple, Industry-Standard, and Free |
-| **Backend** | Express.js (Node.js), Vercel | Lightweight, powerful, and Easy to Deploy |
+| **Backend** | Express.js (Node.js), Railway | Lightweight, Powerful, and Easy to Deploy |
 | **Database** | Firebase Firestore | Scalable, No Setup, Real-Time, Free Tier |
 | **Versioning** | Git & GitHub | Open Source Hosting |
 | **Editor** | Visual Studio Code (VSCode) | Feature-rich and Widely Used by Developers |
-| **AI Assistant** | ChatGPT, Qwen, Deepseek, etc. (AI) | To Help with Faster Writing, Coding, Debugging, and Fixes |
+| **AI Assistant** | ChatGPT, Qwen, Deepseek, etc. | To Help with Faster Writing, Coding, Debugging, and Fixes |
 
 🚀 Why These Tools?\
 **Express.js**: It’s a minimal, fast Node.js framework — perfect for building lightweight APIs.
 
-**Vercel**: Vercel makes it easy to deploy serverless functions quickly and integrates well with GitHub. Plus, I need a free service which can deploy my backend sites.
+**Railway**: Railway makes it easy to deploy Node.js/Express backends quickly with seamless GitHub integration. Plus, it offers a free tier that’s perfect for small-scale projects.
 
 **Firebase Firestore**: Cloud-hosted, scalable NoSQL database — no need for backend management, easy to use, and free for small projects.
 
@@ -60,8 +66,8 @@ This project is not just about logging — it’s also safe and secure:
 
 🧩 This is how I did this project:\
 **> Frontend Setup**
-1. Create HTML pages with clickable elements.
-2. Add scripts that listens for user clicks and sends logs to backend.
+1. Create HTML pages with clickable elements and forms.
+2. Add scripts that listens for user clicks and submissions and sends logs to backend.
 
 **> Backend Setup**
 
@@ -72,8 +78,8 @@ This project is not just about logging — it’s also safe and secure:
 **> Deploy**
 
 1. Push frontend to a GitHub repo and deploy with GitHub Pages.
-2. Push backend code to another (private) GitHub repo and deploy it on Vercel.
-3. Set environment variables like API_KEY and FIREBASE_SERVICE_ACCOUNT on Vercel.
+2. Push backend code to another GitHub repo and deploy it on Railway.
+3. Set environment variables like API_KEY, PORT and FIREBASE_SERVICE_ACCOUNT on Railway.
 
 **> Test**
 1. Open frontend, click elements, make form submissions, and check if logs are saved in Firestore.
@@ -82,7 +88,7 @@ This project is not just about logging — it’s also safe and secure:
 💡 What I Learned
 1. How to connect front-end, backend, and database together
 2. How to protect APIs using CORS and API Keys
-3. How to deploy real-world apps using Vercel and GitHub
+3. How to deploy real-world apps using Railway and GitHub
 4. How to use AI to improve productivity and problem solving
 
 📌 Future Improvements
