@@ -82,7 +82,7 @@ async function logInteraction(type, data) {
             },
             body: JSON.stringify({ type, data }),
         });
-        console.log("Interaction logged successfully!");
+        // console.log("Interaction logged successfully!");
     } catch (error) {
         console.error("Error logging interaction:", error);
     }
