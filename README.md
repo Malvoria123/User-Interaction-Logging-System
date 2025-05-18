@@ -20,6 +20,7 @@ Backend API (deployed on Railway):\
 https://interaction-logger-backend-production.up.railway.app/api
 
 🧠 What This Project Does\
+![User Interaction Logging Diagram](assets/Diagram_intera_logs.png)\
 This system logs user interactions (clicks and form submissions) on a website and stores them in a secure cloud database. For clicks, it collects:
 1. Clicked Products
 2. Product Names
