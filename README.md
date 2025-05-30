@@ -2,7 +2,9 @@
 🚀 This is a personal project I built by myself. This is a user interaction logging system designed to track and store user activities, such as clicks and form submissions that **works on a real website**. The main goal is to show how we can collect useful behavioral data using modern web technologies — in a safe and developer friendly way.
 
 🎦 This is the YouTube video showing that this system really works on a real website:\
-https://youtu.be/6DJq5xxGnmI
+https://youtu.be/6DJq5xxGnmI\
+2nd Video:\
+https://youtu.be/A-GmsVaA5fo
 
 💻 The website used as the frontend in this project was built 100% by myself during my college.
 
