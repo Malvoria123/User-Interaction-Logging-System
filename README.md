@@ -4,8 +4,11 @@
 🎦 This is the YouTube video showing that this system really works on a real website:\
 https://youtu.be/6DJq5xxGnmI
 
-2nd Video:\
+2nd Video (Further Proof):\
 https://youtu.be/A-GmsVaA5fo
+
+3rd Video (How The Rate-limiter Works):\
+https://youtu.be/B1Qb9fMyBek
 
 💻 The website used as the frontend in this project was built 100% by myself during my college.
 
